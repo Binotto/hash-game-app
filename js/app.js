@@ -13,6 +13,8 @@ $("#restartGame" ).click(function() {
 $('#restartScore').click(function(){
     restartGame();
     initiated = 0;
+    playerX = 0;
+    playerO = 0;
     $("#X").html(`Player ${winner} : 0`);
     $("#O").html(`Player ${winner} : 0`);
 });
