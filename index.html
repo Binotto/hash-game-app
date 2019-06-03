@@ -2,16 +2,19 @@
 <html>
 
 <head>
-    <script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Quicksand" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />        
-    <script type="text/javascript" src="js/app.js"></script>
 </head>
 
 <body>
     <div class="header">
         <h1>Hash Game</h1>
+        <div id="X">Player X : 0</div>
+        <div id="O"> Player O : 0</div>
+        <button id="restartGame">Restart Game</button>
+        <button id="restartScore">Restart Score</button>
     </div>
     <div class="container">
             <div id="game">
@@ -33,10 +36,12 @@
                 </div>
     </div>
     <div class="footer">
-        <a href="https://www.linkedin.com/in/matheus-binotto-a51787143/"><i class="fa fa-linkedin"></i>  Linkedin</a>
-        </br>
+        <p>Made by Matheus Binotto</p>
         <a href="https://github.com/Binotto/hash-game-app"><i class="fa fa-github"></i>  View Code on GitHub</a>
+        </br>
+        <a href="https://www.linkedin.com/in/matheus-binotto-a51787143/"><i class="fa fa-linkedin"></i>  Linkedin</a>
     </div>
 <div id="result"></div>
 </body>
 </html>
+<script type="text/javascript" src="js/app.js"></script>

@@ -5,6 +5,13 @@ body{
 .header{
     text-align: center;
 }
+.header button{
+    background: #3a1cff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
 .container{
     background-color:white;
     color: #333333;
@@ -14,13 +21,13 @@ body{
 
 #game{
     width:603px;
-    height:450px;
+    height:460px;
     border:solid 7px
 }
  
 .line{
-    height:150px;
-    border-bottom:solid 3px;
+    height:153px;
+    border-bottom:solid 1px;
 }
  
 .house{
@@ -29,12 +36,20 @@ body{
     border-right:solid 1px;
     float:left;
 }
+.fill-house{
+    width:200px;
+    height:100%;
+}
 .footer {
     margin-top: 16px;
     padding: 16px 0;
     max-width: 610px;
     margin: 0 auto;   
 }
+.footer p{
+    margin: 0;
+}
+
 .footer a{
     color:white;
     text-decoration: none;
