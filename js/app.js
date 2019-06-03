@@ -6,6 +6,41 @@ let initiated = 0;
 let playerX = 0;
 let playerO = 0;
 
+$("#restartGame" ).click(function() {
+    restartGame();
+    initiated = 0;
+});
+$('#restartScore').click(function(){
+    restartGame();
+    initiated = 0;
+    $("#X").html(`Player ${winner} : 0`);
+    $("#O").html(`Player ${winner} : 0`);
+});
+
+const restartGame = () => {
+    for(var number = 0; number < 10; number++) {       
+        if(number === 1){
+            $("#houseOne").css("background", "").removeClass("playerO playerX");
+        }else if(number === 2){
+            $("#houseTwo").css("background", "").removeClass("playerO playerX");
+        }else if(number === 3){
+            $("#houseThree").css("background", "").removeClass("playerO playerX");
+        }else if(number === 4){
+            $("#houseFour").css("background", "").removeClass("playerO playerX");
+        }else if(number === 5){
+            $("#houseFive").css("background", "").removeClass("playerO playerX");
+        }else if(number === 6){
+            $("#houseSix").css("background", "").removeClass("playerO playerX");
+        }else if(number === 7){
+            $("#houseSeven").css("background", "").removeClass("playerO playerX");
+        }else if(number === 8){
+            $("#houseEight").css("background", "").removeClass("playerO playerX");
+        }else if(number === 9){
+            $("#houseNine").css("background", "").removeClass("playerO playerX");
+        }
+    }
+    return true;
+}
 
 const housesAlike = (a, b, c) => {
     const backgroundA = $("#house"+a).css("background-image");
